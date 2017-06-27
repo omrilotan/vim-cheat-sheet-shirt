@@ -1,0 +1,94 @@
+Global
+    :help :h - keyword
+    :o file - open file
+    :saveas file
+    :close - close current pane
+    K - man page for word
+Movement
+    h - left
+    j - down
+    k - up
+    l - right
+    H - top of screen
+    M - middle of screen
+    L - bottom of screen
+    w - forward to start of a word
+    W - forward to start of a word
+    e - forward to end of a word
+    E - forward to end of a word
+    b - backward to start of a word
+    B - backward to start of a word
+    % - move to matching character
+    0 - start of the line
+    ^ - first non-blank character of the line
+    $ - end of the line
+    g_ - goto last non-blank char of the line
+    gg - goto first line of the document
+    G - goto last line of the document
+    5G - goto line 5
+    fx - next occurrence of char x
+    tx - before next occurrence of char x
+    } - next paragraph or block
+    { - previous paragraph or block
+    zz - center cursor
+    Ctrl + b - back one full screen
+    Ctrl + f - forward one full screen
+    Ctrl + d - forward 1/2 a screen
+    Ctrl + u - back 1/2 a screen
+Insert
+    i - insert before the cursor
+    I - insert at the beginning of the line
+    a - append after the cursor
+    A - append at the end of the line
+    o - append a new line below
+    O - append a new line above
+    ea - append at the end of the word
+    Esc - exit insert mode
+Editing
+    r - replace
+    J - join line below
+    cc - change line
+    cw - change to end of word
+    c$ - change to end of line
+    s - delete character and substitute text
+    S - delete line and substitute text (cc)
+    xp - transpose two letters
+    u - undo
+    Ctrl + r - redo
+    . - repeat last command
+Cut and paste
+    yy - yank line
+    yw - yank characters upto next word
+    y$ - yank to end of line
+    p - put clipboard after cursor
+    P - put before cursor
+    dd - delete a line
+    dw - delete characters upto next word
+    D - delete to the end of the line
+    d$ - delete to the end of the line
+    x - delete character
+Exiting
+    :w - write file
+    :w !sudo tee % - sudo write current file
+    :wq or :x or ZZ - write and quit
+    :q - quit (no unsaved changes)
+    :q! or ZQ - quit discard unsaved changes
+Search and replace
+    /pattern - search pattern
+    ?pattern - search backward
+    \vpattern - no escaping
+    n - repeat in same direction
+    N - repeat in opposite direction
+    :%s/x/y/g - replace x with y in file
+    :%s/x/y/gc - replace with confirmations
+    :noh - remove matches highlighting
+Marks
+    :marks - list
+    ma - set mark A
+    `a - jump to mark A
+    y`a - yank text tomark A
+Macros
+    qa - record macro a
+    q - stop recording macro
+    @a - run macro a
+    @@ - rerun last run macro
