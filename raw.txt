@@ -44,7 +44,7 @@ Insert
     O - append a new line above
     ea - append at the end of the word
     Esc - exit insert mode
-Editing
+Edit
     r - replace
     J - join line below
     cc - change line
@@ -67,7 +67,7 @@ Cut and paste
     D - delete to the end of the line
     d$ - delete to the end of the line
     x - delete character
-Exiting
+Exit
     :w - write file
     :w !sudo tee % - sudo write current file
     :wq or :x or ZZ - write and quit
